@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify",
-    "test": "tap test/*.js"
+    "test": "tap tests/*.js"
   },
   "repository": "git://github.com/charlotteis/liste",
   "license": "AGPL-3.0",
