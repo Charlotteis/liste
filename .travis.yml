@@ -3,3 +3,9 @@ node_js:
   - "8"
   - "7"
   - "6"
+install:
+  - npm install nyc
+  - npm install -g codecov
+script:
+  - npm test
+  - nyc report --reporter=lcov > coverage.lcov && codecov
