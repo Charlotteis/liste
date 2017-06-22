@@ -1,0 +1,3 @@
+{
+  "main component": "<body>\n      <h1>Ich heiße... Charlotte</h1>\n      <label for=\"name\">Type your name!</label>\n      <input type=\"text\" id=\"name\" value=\"Charlotte\" />\n    </body>"
+}

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify",
-    "test": "tap tests/*.js",
+    "test": "standard && npm run test-snapshots && tap tests/*.js",
+    "test-snapshots": "tap tests/components/*.js",
     "coverage": "tap --coverage-report=lcov tests/*.js"
   },
   "repository": "git://github.com/charlotteis/liste",
@@ -23,7 +24,9 @@
     "npm": "github:npm/npm#release-next"
   },
   "devDependencies": {
-    "tap": "^10.5.1",
-    "choo-log": "^6.1.2"
+    "assert-snapshot": "^1.0.1",
+    "choo-log": "^6.1.2",
+    "standard": "^10.0.2",
+    "tap": "^10.5.1"
   }
 }
