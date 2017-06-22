@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "budo index.js:bundle.js -p 3000 --no-debug -- -b bundle-collapser/plugin -g unassertify -g yo-yoify -g uglifyify",
-    "test": "standard && npm run test-snapshots && tap tests/*.js",
-    "test-snapshots": "tap tests/components/*.js",
-    "coverage": "tap --coverage-report=lcov tests/*.js"
+    "test": "npm run test-standard && npm run test-snapshots && npm run test-components && npm run test-stores",
+    "test-snapshots": "tap tests/snapshots/*.js",
+    "test-stores": "tap tests/stores/*.js",
+    "test-standard": "standard",
+    "test-components": "tap tests/components/*.js",
+    "coverage": "tap --coverage-report=lcov tests/"
   },
   "repository": "git://github.com/charlotteis/liste",
   "license": "AGPL-3.0",
@@ -26,6 +29,7 @@
   "devDependencies": {
     "assert-snapshot": "^1.0.1",
     "choo-log": "^6.1.2",
+    "spok": "^0.8.1",
     "standard": "^10.0.2",
     "tap": "^10.5.1"
   }

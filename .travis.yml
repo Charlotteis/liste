@@ -4,8 +4,8 @@ node_js:
   - "7"
   - "6"
 install:
-  - npm install tap
+  - npm install standard tap
   - npm install -g codecov
 script:
-  - npm test
-  - tap --coverage-report=lcov tests/*.js && codecov
+  - npm run test-standard
+  - npm run coverage && codecov

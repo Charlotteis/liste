@@ -1,12 +1,18 @@
 'use strict'
 
-const snap = require('assert-snapshot')
 const tap = require('tap')
+const main = require('../../components/main')
 
-const main = require('../../templates/main')
+tap.test('name updates', (t) => {
+  const event = {target: { value: 'Charlotte' }}
+  let emitted = false
 
-tap.test('main component', (assert) => {
-  const str = main({name: 'Charlotte'}).toString()
-  snap(assert, str)
-  assert.end()
+  function emit (name, value) {
+    emitted = true
+    t.equal(value, event.target.value)
+  }
+
+  main._updateName(event, emit)
+  t.ok(emitted, 'event called back was emitted')
+  t.end()
 })
