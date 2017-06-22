@@ -16,14 +16,14 @@
     "choo": "^5.6.2",
     "uglifyify": "^4.0.1",
     "unassertify": "^2.0.4",
-    "yo-yoify": "^3.7.3",
-    "choo-log": "^6.1.2"
+    "yo-yoify": "^3.7.3"
   },
   "engines": {
     "node": "8",
     "npm": "github:npm/npm#release-next"
   },
   "devDependencies": {
-    "tap": "^10.5.1"
+    "tap": "^10.5.1",
+    "choo-log": "^6.1.2"
   }
 }
