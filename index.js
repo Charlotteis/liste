@@ -2,7 +2,7 @@
 
 const choo = require('choo')
 const nameStore = require('./stores/nameStore')
-const main = require('./templates/main')
+const main = require('./components/main')
 
 const app = choo()
 
