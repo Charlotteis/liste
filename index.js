@@ -1,8 +1,9 @@
 'use strict'
 
 const choo = require('choo')
-const nameStore = require('./stores/nameStore')
-const main = require('./components/main')
+
+const todoStore = require('./stores/todoStore')
+const todoForm = require('./components/todoForm')
 
 const app = choo()
 
@@ -11,8 +12,9 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(log())
 }
 
-app.use(nameStore)
+app.use(todoStore)
 
-app.route('/', main)
+app.route('/', todoForm)
 
+// TODO: Find better mount.
 app.mount('body')
