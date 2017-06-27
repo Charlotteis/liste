@@ -18,7 +18,7 @@
     "budo": "^10.0.3",
     "bundle-collapser": "^1.2.1",
     "choo": "^5.6.2",
-    "uglifyify": "^4.0.1",
+    "uglifyify": "^4.0.2",
     "unassertify": "^2.0.4",
     "yo-yoify": "^3.7.3"
   },
@@ -31,6 +31,6 @@
     "choo-log": "^6.1.2",
     "spok": "^0.8.1",
     "standard": "^10.0.2",
-    "tap": "^10.5.1"
+    "tap": "^10.7.0"
   }
 }
