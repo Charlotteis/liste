@@ -15,6 +15,6 @@ module.exports = (state, emit) => {
 module.exports._getTodos = getTodos
 function getTodos (todos) {
   return todos.map((todo) => {
-    return `<li>${todo}</li>`
-  }).join('')
+    return html`<li>${todo}</li>`
+  })
 }

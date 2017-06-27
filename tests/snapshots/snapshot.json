@@ -1,4 +1,4 @@
 {
-  "todoForm": "<body>\n      <h1>What shall we do?</h1>\n      <form action=\"\">\n        <label for=\"todo\">Todo</label>\n        <input type=\"text\" id=\"todo\" value=\"\" />\n        <button type=\"submit\">Add todo</button>\n      </form>\n      <ul>\n        &lt;li&gt;Destroy Capitalism&lt;/li&gt;&lt;li&gt;Learn Choo&lt;/li&gt;&lt;li&gt;Eat Pizza&lt;/li&gt;\n      </ul>\n    </body>",
-  "todoList": "<ul>\n        &lt;li&gt;Destroy Capitalism&lt;/li&gt;&lt;li&gt;Learn Choo&lt;/li&gt;&lt;li&gt;Eat Pizza&lt;/li&gt;\n      </ul>"
+  "todoForm": "<body>\n      <h1>What shall we do?</h1>\n      <form action=\"\">\n        <label for=\"todo\">Todo</label>\n        <input type=\"text\" id=\"todo\" value=\"\" />\n        <button type=\"submit\">Add todo</button>\n      </form>\n      <ul>\n        <li>Destroy Capitalism</li><li>Learn Choo</li><li>Eat Pizza</li>\n      </ul>\n    </body>",
+  "todoList": "<ul>\n        <li>Destroy Capitalism</li><li>Learn Choo</li><li>Eat Pizza</li>\n      </ul>"
 }
