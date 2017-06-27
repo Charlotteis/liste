@@ -1,3 +1,4 @@
 {
-  "main component": "<body>\n      <h1>Ich heiße... Charlotte</h1>\n      <label for=\"name\">Type your name!</label>\n      <input type=\"text\" id=\"name\" value=\"Charlotte\" />\n    </body>"
+  "todoForm": "<body>\n      <h1>What shall we do?</h1>\n      <form action=\"\">\n        <label for=\"todo\">Todo</label>\n        <input type=\"text\" id=\"todo\" value=\"\" />\n        <button type=\"submit\">Add todo</button>\n      </form>\n      <ul>\n        &lt;li&gt;Destroy Capitalism&lt;/li&gt;&lt;li&gt;Learn Choo&lt;/li&gt;&lt;li&gt;Eat Pizza&lt;/li&gt;\n      </ul>\n    </body>",
+  "todoList": "<ul>\n        &lt;li&gt;Destroy Capitalism&lt;/li&gt;&lt;li&gt;Learn Choo&lt;/li&gt;&lt;li&gt;Eat Pizza&lt;/li&gt;\n      </ul>"
 }
