@@ -3,6 +3,7 @@
 const html = require('choo/html')
 
 const todoList = require('./todoList')
+const shortid = require('shortid')
 
 module.exports = (state, emit) => {
   return html`
@@ -19,8 +20,11 @@ module.exports = (state, emit) => {
 }
 
 module.exports._addTodo = addTodo
-function addTodo (e, emit) {
+function addTodo (e, emit, id = shortid.generate()) {
   e.preventDefault()
-  const todo = e.target.todo.value
-  emit('addTodo', todo)
+  const todo = {
+    'id': id,
+    'todo': e.target.todo.value
+  }
+  emit('addTodo', {todo})
 }
