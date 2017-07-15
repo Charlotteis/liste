@@ -18,6 +18,7 @@
     "budo": "^10.0.3",
     "bundle-collapser": "^1.2.1",
     "choo": "^5.6.2",
+    "shortid": "^2.2.8",
     "uglifyify": "^4.0.2",
     "unassertify": "^2.0.4",
     "yo-yoify": "^3.7.3"

@@ -1,13 +1,14 @@
-/* globals localStorage */
-
 'use strict'
 
 module.exports = (state, emitter) => {
-  const todos = localStorage.getItem('todos') ? localStorage.getItem('todos').split(',') : []
-  state.todos = todos || []
-  emitter.on('addTodo', (todo) => {
-    state.todos.push(todo)
-    localStorage.setItem('todos', state.todos)
+  state.todos = state.todos || {}
+  emitter.on('addTodo', ({todo}) => {
+    state.todos[todo.id] = todo
+    emitter.emit('render')
+  })
+
+  emitter.on('deleteTodo', (id) => {
+    delete state.todos[id]
     emitter.emit('render')
   })
 }
