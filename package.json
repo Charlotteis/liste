@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "assert-snapshot": "^1.0.1",
-    "choo-log": "^6.1.2",
+    "choo-log": "^7.0.0",
     "spok": "^0.8.1",
     "standard": "^10.0.2",
     "tap": "^10.7.0"
