@@ -14,16 +14,16 @@ module.exports = (state, emit) => {
 
 module.exports._getTodos = getTodos
 function getTodos (todos, emit) {
-  let html = []
+  let htmlList = []
   for (const key in todos) {
-    html.push(html`
-      <li data-id='${key}'>
-        ${todos[key].todo}
-        <button onclick=${(e) => deleteTodo(e, emit, key)}>Delete</button>
+    htmlList.push(html`
+      <li data-id="${todos[key]['id']}">
+        ${todos[key]['todo']}
+        <button onclick=${(e) => deleteTodo(e, emit, todos[key]['id'])}>Delete</button>
       </li>`)
   }
 
-  return html
+  return htmlList
 }
 
 module.exports._deleteTodo = deleteTodo
