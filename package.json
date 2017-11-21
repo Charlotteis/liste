@@ -21,7 +21,7 @@
     "shortid": "^2.2.8",
     "uglifyify": "^4.0.2",
     "unassertify": "^2.0.4",
-    "yo-yoify": "^3.7.3"
+    "yo-yoify": "^4.2.0"
   },
   "engines": {
     "node": "8",
