@@ -24,7 +24,7 @@
     "yo-yoify": "^3.7.3"
   },
   "engines": {
-    "node": "8",
+    "node": "10",
     "npm": "github:npm/npm#release-next"
   },
   "devDependencies": {
